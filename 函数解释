@@ -1,0 +1,53 @@
+以下是每个函数的作用：
+
+basic_stats(data):
+
+计算并打印数据的均值、标准差、偏度和峰度。
+showURL(url, ht=600):
+
+在Jupyter Notebook中显示一个给定URL的IFrame。
+load_sms():
+
+加载短信数据集，并将标签从文本（"ham", "spam"）转换为数字（0, 1）。
+discrete_histogram(data, normed=False, alpha=1):
+
+绘制离散数据的直方图，可以选择标准化数据。
+plotEMF(numRelFreqPairs, force_display=True):
+
+绘制经验质量函数（Empirical Mass Function）。
+makeFreq(data_sequence):
+
+计算数据序列中每个唯一值的频率。
+makeEMF(data_sequence):
+
+生成经验质量函数。
+makeEDF(data_sequence):
+
+生成经验分布函数（Empirical Distribution Function）。
+emfToEdf(emf):
+
+将经验质量函数转换为经验分布函数。
+plotEDF(edf, force_display=True, points_at_jump=True, confidence_band=False, alpha=0.95):
+
+绘制经验分布函数，可以选择显示跳跃点和置信区间。
+linConGen(m, a, b, x0, n):
+
+生成线性同余序列的伪随机数。
+scatter3d(x, y, z, c=None, size=2, fig=None):
+
+使用Plotly绘制3D散点图。
+classification_report_interval(y_true, y_pred, labels=None, alpha=0.01, union_bound_correction=True):
+
+生成分类报告，包括精度、召回率和准确率的置信区间。
+bennett_epsilon(n, b, sigma, alpha):
+
+使用Bennett不等式计算给定置信水平下的误差范围。
+epsilon_bounded(n, b, alpha):
+
+使用Hoeffding不等式计算给定置信水平下的误差范围。
+print_confidence_interval(point_estimate, epsilon, min_value=None, max_value=None):
+
+打印置信区间。
+train_test_validation(X, Y, test_size=0.2, validation_size=0.2, random_state=None, shuffle=True):
+
+将数据分为训练集、测试集和验证集。
